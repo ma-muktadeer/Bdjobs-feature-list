@@ -1,0 +1,75 @@
+.feature-card {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 6px;
+    border: 1px solid #C6C6C6;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.icon-blue {
+    color: #007bff;
+    margin-right: 8px;
+}
+
+::ng-deep .owl-item {
+    transition: z-index 0s 0.3s;
+}
+
+::ng-deep .owl-item:hover,
+::ng-deep .owl-item.active:hover {
+    z-index: 999999 !important;
+    transition: z-index 0s !important;
+}
+
+
+::ng-deep .owl-stage-outer {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    margin-top: -150px !important;
+    margin-bottom: -150px !important;
+}
+
+::ng-deep .owl-dots {
+    display: flex !important;
+    justify-content: center;
+    gap: 12px;
+    position: relative !important;
+    z-index: 100 !important;
+    bottom: -50px !important;
+    margin-top: 20px;
+}
+
+::ng-deep .owl-dot span {
+    width: 8px !important;
+    height: 8px !important;
+    background: #D9D9D9 !important;
+    display: block;
+    border-radius: 50% !important;
+    /* Smooth "traveling" effect transition */
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 0.4s ease,
+        border-radius 0.4s ease !important;
+}
+
+::ng-deep .owl-dot.active span {
+    background: #004DB3 !important;
+    /* background: #C63C92 !important; */
+    width: 28px !important;
+    border-radius: 6px !important;
+}
+
+@media (min-width: 768px) {
+    ::ng-deep .owl-dots {
+        display: none !important;
+    }
+}
+
+@media (max-width: 765px) {
+    .custom-nav-btn {
+        display: none !important;
+    }
+}
