@@ -43,7 +43,8 @@
                     </div> -->
                     <div class="overflow-hidden transition-[max-height] duration-500 ease-in-out">
                         <p
-                            class="text-[#595959] font-normal text-[14px] leading-[23px] m-0 text-left line-clamp-none md:line-clamp-4 md:group-hover/card:line-clamp-none">
+                            class="text-[#595959] font-normal text-[14px] leading-[23px] m-0 text-left 
+                            {{slide.isExpanded ? 'line-clamp-none' : 'line-clamp-4 md:group-hover/card:line-clamp-none'}}">
                             {{slide.description}}
                         </p>
                     </div>
