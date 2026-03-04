@@ -1,0 +1,11 @@
+.index {
+    z-index: 9999999999999999 !important;
+}
+
+.font-inter {
+    font-family: 'Inter' !important;
+}
+
+.leading-4 {
+    line-height: 18px;
+}
