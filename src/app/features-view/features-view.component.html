@@ -1,0 +1,200 @@
+@defer (on idle) {
+<div class="bg-white">
+    <app-header></app-header>
+    <div class="relative z-[9999] mt-0 md:mt-4 px-4 lg:px-0">
+        <app-common nextSection="manage-profile" featureId="bdjobs-pro" featureHeading="Bdjobs Pro" featureDescription="Bdjobs Pro offers special features to help users gain an advantage in today's competitive job market. It
+            enhances the job search experience with features like unlimited applications, job-matching insights, and application
+            information about other applicants. Users can boost their applications, directly message employers, and
+            access jobs early." featureLink="https://mybdjobs.bdjobs.com/mybdjobs/package-info.asp"
+            featureImage="images/bdjobs_pro.jpg" featureIcon="icons-png/Bdjobs-Pro.png" [showCarousel]="true">
+        </app-common>
+    </div>
+
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="manage-profile" featureHeading="Manage Profile" featureDescription="You can check your resume and do necessary changes if needed. By updating
+            your resume and recording your video resume, will increase the chances of
+            getting your resume viewed by Employer(s). You can also upload your
+            Personalized resume for employers to view it as well as. You can also
+            email to any employer attaching your resume." featureImage="images/manage_resume.jpg"
+            featureIcon="icons-png/manage_img.png" [imageRight]="true" nextSection="my-dashboard"
+            prevSection="bdjobs-pro"></app-common>
+    </div>
+    <div class="relative lg:py-10 px-4 lg:px-0">
+        <app-common featureId="my-dashboard" featureHeading="My Dashboard"
+            featureDescription="The Dashboard offers a snapshot of your resume visibility, total CV views, and emails sent 
+            to employers. It shows your profile completion percentage and lets you view or edit essential sections for updates."
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/resume-dashboard.asp"
+            featureImage="images/my-dashboard.jpg" featureIcon="icons-png/Dashboard.png" nextSection="video-cv"
+            prevSection="manage-profile">
+        </app-common>
+    </div>
+
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="video-cv" featureHeading="Video CV" featureDescription="This is a short video where job seekers can present their educational
+            qualifications, skills and experience to the employer by answering some of
+            the questions prescribed by bdjobs. You can edit and delete recorded video
+            at any time." featureImage="images/video_resume.jpg" featureIcon="icons-png/video_resume_img.png"
+            [imageRight]="true" [showVideoCv]="true" nextSection="customized-cv" prevSection="my-dashboard">
+        </app-common>
+    </div>
+    <div class="relative lg:py-10 px-4 lg:px-0">
+        <app-common featureId="customized-cv" featureHeading="Customized CV"
+            featureDescription="The Dashboard offers a snapshot of your resume visibility, total CV views, and emails sent 
+            to employers. It shows your profile completion percentage and lets you view or edit essential sections for updates."
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/file_upload.asp#google_vignette"
+            featureImage="images/Customized-CV.jpg" featureIcon="icons-png/Customized-CV.png" nextSection="emailed-cv"
+            prevSection="video-cv">
+        </app-common>
+    </div>
+
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="emailed-cv" featureHeading="Emailed CV" featureDescription="This feature lets you email your CV directly to employers. You can send either your detailed or short Bdjobs
+        profile or attach your personalized CV if uploaded. You can also include a custom message to introduce yourself or
+        highlight key points. This helps you tailor your application for different jobs and increases your chances of
+        getting noticed." featureImage="images/Emailed-CV.jpg" featureIcon="icons-png/Email-CV.png"
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/mail_form.asp" [imageRight]="true"
+            nextSection="live-interview" prevSection="customized-cv">
+        </app-common>
+    </div>
+    <div class="relative lg:py-10 px-4 lg:px-0">
+        <app-common featureId="live-interview" featureHeading="Live Interview" featureDescription="Under the &ldquo;Live Interview&rdquo; section, you&rsquo;ll see a list of your live interview invitations,
+            including the company name, position, and invitation date. It&rsquo;s your go-to place to keep track of
+            opportunities." featureLink="https://mybdjobs.bdjobs.com/mybdjobs/mail_form.asp"
+            featureImage="images/Live-Interview.jpg" featureIcon="icons-png/Live-interview.png"
+            nextSection="video-interview" prevSection="emailed-cv">
+        </app-common>
+    </div>
+
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="video-interview" featureHeading="Video Interview" featureDescription="In the &ldquo;Video Interview&rdquo; section, you&rsquo;ll find a list of your video interview invitations, including the company
+        name, position, and invitation date. It&rsquo;s your main hub for tracking opportunities."
+            featureImage="images/Video-Interview.jpg" featureIcon="icons-png/Video-interview.png"
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/UserGuideFor_videoInterview.asp" [imageRight]="true"
+            nextSection="general-interview" prevSection="live-interview">
+        </app-common>
+    </div>
+    <div class="relative lg:py-10 px-4 lg:px-0">
+        <app-common featureId="general-interview" featureHeading="General Interview" featureDescription="You'll find a list of your interview invitations, including the company name, position, and invitation date. By
+            selecting Details, you can access more information about each invitation. It's the perfect place to manage
+            opportunities and make sure you take advantage of every important interview."
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/mail_form.asp" featureImage="images/General-Interview.jpg"
+            featureIcon="icons-png/General-interview.png" nextSection="online-test" prevSection="video-interview">
+        </app-common>
+    </div>
+
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="online-test" featureHeading="Online Test"
+            featureDescription="In the &ldquo;Online Test&rdquo; section, you'll find a list of your invitations, 
+            including the company name, job position, and invitation date. You can also view detailed information about each test." featureImage="images/Online-Test.jpg"
+            featureIcon="icons-png/Online-test.png"
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/user-guide-for-online-test.asp" [imageRight]="true"
+            nextSection="ai-assessment" prevSection="general-interview">
+        </app-common>
+    </div>
+    <div class="relative lg:py-10 px-4 lg:px-0">
+        <app-common featureId="ai-assessment" featureHeading="AI Assessment"
+            featureDescription="In the &ldquo;AI Assessment&rdquo; section, you'll find a list of your invitations, 
+            including the company name, position, and invitation date. It also offers tips and highlights the benefits of AI assessments, helping you better prepare."
+            featureImage="images/AI-Assessment.jpg" featureIcon="icons-png/AI-Assessment.png"
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/user-guide-ai-assessment.asp" nextSection="applied-jobs"
+            prevSection="online-test">
+        </app-common>
+    </div>
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="applied-jobs" featureHeading="Applied Jobs" featureDescription="You can view the status of jobs you've applied for. Click on any &ldquo;Job Title&rdquo; to see details, or use filters like
+            company name, application date, or recruitment status to find specific jobs. The list shows all applied job
+            details, resume views, and expected salary information." featureImage="images/AI-Assessment.jpg"
+            featureIcon="icons-png/Applied-jobs.png"
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/user-guide-for-online-test.asp" [imageRight]="true"
+            nextSection="shortlisted-job" prevSection="ai-assessment">
+        </app-common>
+    </div>
+
+    <div class="relative lg:py-10 px-4 lg:px-0">
+        <app-common featureId="shortlisted-job" featureHeading="Shortlisted Job" featureDescription="This section lets you track jobs you've shortlisted, showing key details like company name, job title, and
+            deadline. You can also search by date or company name to stay organized easily."
+            featureImage="images/Shortlisted-Job.jpg" featureIcon="icons-png/Shortlisted-jobs.png"
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/show_cart.asp" nextSection="following-employer"
+            prevSection="applied-jobs">
+        </app-common>
+    </div>
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="following-employer" featureHeading="Following Employer" featureDescription="You can see a list of the following employers and their current job vacancies. Click on the number of available
+            jobs to explore opportunities, or manage your preferences by unfollowing employers or adjusting SMS notifications.
+            It&rsquo;s an easy way to stay updated on companies you&rsquo;re interested in."
+            featureImage="images/Following-Employer.jpg" featureIcon="icons-png/Following-employer.png"
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/Emp_Followed.asp" [imageRight]="true"
+            nextSection="my-points" prevSection="shortlisted-job">
+        </app-common>
+    </div>
+
+    <div class="relative lg:py-10 px-4 lg:px-0">
+        <app-common featureId="my-points" featureHeading="My Points" featureDescription="The My Points section offers a detailed view of the history of your points, summarizing all activities that
+            impacted your points. You can see total points earned or deducted, categorized by date and activity, making it
+            easy to track what actions earned you points and what led to deductions."
+            featureImage="images/My-Points.jpg" featureIcon="icons-png/my-points.png"
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/point-dashboard.asp" nextSection="employer-activity"
+            prevSection="following-employer">
+        </app-common>
+    </div>
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="employer-activity" featureHeading="Employer Activity" featureDescription="The Bdjobs Pro Subscription lets you directly message your favorite employers and view their responses in the
+            Employer Message section. You&rsquo;ll receive notifications about employers interested in you and track who has
+            viewed your CV. These features enhance your ability to connect with potential employers and streamline your job search
+            process." featureImage="images/Employer-Activity.jpg" featureIcon="icons-png/my-points.png"
+            featureLink="https://mybdjobs.bdjobs.com/mybdjobs/resume_view.asp" [imageRight]="true"
+            nextSection="favourite-search" prevSection="my-points">
+        </app-common>
+    </div>
+
+    <div class="relative lg:py-10 px-4 lg:px-0">
+        <app-common featureId="favourite-search" featureHeading="Favourite search" featureDescription="Save your job search as Favourite to get faster search result. Just click
+            on Save as Favourite and type your favourite search name to keep it as Favourite."
+            featureImage="images/favourite_search.png" featureIcon="icons-png/fvrt_search_img.png"
+            nextSection="sms-job-alert" prevSection="employer-activity">
+        </app-common>
+    </div>
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="sms-job-alert" featureHeading="SMS Job Alert" featureDescription="Purchase the SMS bundle plan of your choice to receive instant job alerts.
+            You can find various bundle packages based on your desire. Also get 20 free SMS as a trial"
+            featureImage="images/sms_job_alert.jpg" featureIcon="icons-png/sms_alrt_img.png" [imageRight]="true"
+            nextSection="advanced-job-search-filter" prevSection="favourite-search">
+        </app-common>
+    </div>
+    <div class="relative lg:py-10 px-4 lg:px-0">
+        <app-common featureId="advanced-job-search-filter" featureHeading="Advanced Job Search Filter"
+            featureDescription="You don't have to search through all of the jobs to find those that match
+            your desired criteria. Simply use Filters like Keyword (s), Category,
+            Industry, Location, Deadline, Posted/Deadline, Newspaper Job and Other
+            Filters to find your desire jobs easily and smoothly." featureImage="images/desired_criteria.jpg"
+            featureIcon="icons-png/desired_ctria_img.png" nextSection="profile-preference" prevSection="sms-job-alert">
+        </app-common>
+
+    </div>
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="profile-preference" featureHeading="Profile Preference" featureDescription="You can make your resume Public so that all employers can see your resume
+            or you can make your resume Private so that employers can see your resume
+            only when you apply to their job. We strongly recommend that you should
+            keep your resume Public to increase your visibility and chances. You can
+            also select employers of your choice whom you don't want to show your
+            resume." featureImage="images/set_privacy.jpg" featureIcon="icons-png/setPrivacy_img.png"
+            [imageRight]="true" nextSection="easy-apply" prevSection="advanced-job-search-filter">
+        </app-common>
+    </div>
+
+    <div class="relative lg:py-10 px-4 lg:px-0">
+        <app-common featureId="easy-apply" featureHeading="Easy Apply" featureDescription="Job application process is optimized. By posting your complete resume at
+            My Bdjobs, you can apply to a job through easy few clicks." featureImage="images/easy_apply.jpg"
+            featureIcon="icons-png/easyApply_img.png" nextSection="see-training-details"
+            prevSection="profile-preference">
+        </app-common>
+    </div>
+    <div class="bg-[#EEEEEE] lg:py-10 px-4 lg:px-0">
+        <app-common featureId="see-training-details" featureHeading="See Training Details" featureDescription="You can see upcoming trainings, training details from My Training. Also
+            you Can check your Wishlist and relevant training that may enrich your career."
+            featureImage="images/easy_apply.jpg" featureIcon="icons-png/easyApply_img.png" [imageRight]="true"
+            nextSection="" prevSection="easy-apply">
+        </app-common>
+    </div>
+</div>
+}
