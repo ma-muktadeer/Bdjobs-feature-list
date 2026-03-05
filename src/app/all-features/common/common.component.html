@@ -1,9 +1,10 @@
 <div id="{{featureId()}}"
     class="relative flex flex-col lg:flex-row w-full max-w-[1140px] mx-auto gap-8 lg:px-0 lg:h-[330px] lg:py-0 pt-3 pb-0 px-0 md:p-4"
     [class.z-[20]]="!isHover()" [class.z-[1]]="isHover()">
-    <div class="md:flex {{imageRight() ? 'flex-row-reverse' : 'flex-row'}} gap-8">
-        <div class="w-full lg:max-w-[564px] flex flex-col items-center md:items-start">
-            <img class="w-10 h-10 md:w-16 md:h-16 mb-0 mx-auto md:mx-0 transition-transform hover:scale-105"
+    <div class="md:flex {{imageRight() ? 'flex-row-reverse' : 'flex-row'}} gap-8 mb-[45px] md:mb-0">
+
+        <!-- <div class="w-full lg:max-w-[564px] flex flex-col items-center md:items-start">
+            <img class="w-10 h-10 md:mb-6 md:w-16 md:h-16 mb-0 transition-transform hover:scale-105"
                 src="{{featureIcon()}}" alt="{{featureHeading()}}" />
             <div class="flex justify-between items-center w-full mb-3">
                 <h1
@@ -23,8 +24,7 @@
                 </div>
                 }
             </div>
-            <p
-                class="font-inter text-[12px] leading-4 text-center md:text-justify text-gray-700 leading-relaxed text-sm md:text-base">
+            <p class="font-inter text-[#4F4F4F] text-sm leading-relaxed text-center md:text-justify mt-auto">
                 {{featureDescription()}}
             </p>
             @if(false){
@@ -42,6 +42,53 @@
                 <span
                     class="cursor-pointer flex items-center gap-x-1 group text-gray-600 hover:text-blue-600 font-medium"
                     (click)="prev()"><span>Prev</span> <span class="icon-angle-up text-sm"></span></span>
+                }
+            </div>
+            }
+        </div> -->
+
+
+        <div class="w-full lg:max-w-[564px] flex flex-col md:items-start items-center justify-center">
+            <img class="w-10 h-10 md:w-16 md:h-16 mb-0 md:mb-6 transition-transform hover:scale-105"
+                src="{{featureIcon()}}" alt="{{featureHeading()}}" />
+            <div class="flex justify-center md:justify-between items-center w-full mb-3 gap-4">
+                <h1
+                    class="text-[#212121] font-inter md:text-2xl md:font-bold text-base font-semibold leading-6 text-center">
+                    {{featureHeading()}}
+                </h1>
+                @if(!showVideoCv()){
+                <a [href]="featureLink()" target="_blank"
+                    class="hidden md:flex items-center justify-end text-[#004DB3] hover:underline">
+                    <p class="font-semibold text-sm">More</p>
+                    <img class="px-2" src="icons/arrow-right.svg" alt="" />
+                </a>
+                } @else {
+                <div class="hidden md:flex items-center gap-x-2 text-[#004DB3]">
+                    <img class="px-2" src="icons/youtube.svg" alt="" />
+                    <p class="font-semibold text-sm">See Video</p>
+                </div>
+                }
+            </div>
+            <p class="font-inter text-[#4F4F4F] text-sm leading-relaxed text-center md:text-justify">
+                {{featureDescription()}}
+            </p>
+            @if(false){
+            <div class="w-full mt-4 flex gap-4 justify-center relative px-4 index">
+                @if(nextSection()){
+                <span
+                    class="cursor-pointer flex items-center gap-x-1 group text-gray-600 hover:text-blue-600 font-medium"
+                    (click)="next()">
+                    <span>Next</span>
+                    <span class="icon-angle-down text-sm transition-transform group-hover:translate-x-1"></span>
+                </span>
+                }
+                @if (prevSection()) {
+                <span
+                    class="cursor-pointer flex items-center gap-x-1 group text-gray-600 hover:text-blue-600 font-medium"
+                    (click)="prev()">
+                    <span>Prev</span>
+                    <span class="icon-angle-up text-sm"></span>
+                </span>
                 }
             </div>
             }
