@@ -36,11 +36,11 @@
 ::ng-deep .owl-dots {
     display: flex !important;
     justify-content: center;
-    gap: 12px;
+    gap: 1.25rem;
     position: relative !important;
     z-index: 100 !important;
-    bottom: -50px !important;
-    margin-top: 20px;
+    bottom: calc(-50px - 10vh) !important;
+    margin-top: 2vh;
 }
 
 ::ng-deep .owl-dot span {

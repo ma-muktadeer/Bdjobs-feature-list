@@ -21,31 +21,36 @@ export class CarouselCardListComponent {
     margin: 24,
     navSpeed: 700,
     smartSpeed: 700,
+    stagePadding: 20,
     nav: false,
     responsive: {
       0: {
         items: 1,
         margin: 16,
+        stagePadding: 0,
         dots: true
       },
       400: {
         items: 1.5,
+        stagePadding: 0,
         margin: 16,
         dots: true
       },
       600: {
-        items: 2.2,
+        items: 2.0,
+        stagePadding: 0,
         margin: 16,
         dots: true
       },
       768: {
-        items: 2.5,
+        items: 3.0,
         margin: 20,
         dots: false
       },
       1024: {
-        items: 3.8,
+        items: 4.0,
         margin: 24,
+        stagePadding: 15,
         dots: false
       }
     },
@@ -131,6 +136,8 @@ export class CarouselCardListComponent {
     this.isHover.emit(bool);
   }
   toggleExpand(slide: any) {
+    // if (window.innerWidth < 768) return;
+
     // if (slide.isExpanded) {
     //   this.slidesStore.forEach(s => s.isExpanded = false);
     // } else {
