@@ -1,0 +1,39 @@
+<div id="general-interview"
+  class="flex flex-col sm:flex sm:flex-row sm:w-[1140px] gap-x-9 my-6 items-center justify-self-center justify-between mx-auto">
+  <!-- left side  -->
+  <div class="sm:w-[564px] w-[267px]">
+    <img class="w-16 h-16 mb-5 hover:border-inherit flex justify-self-center sm:flex sm:justify-self-start"
+      src="icons-png/General-interview.png" alt="" />
+    <!-- title  -->
+    <div class="flex justify-between items-center mb-3 sm:mb-4">
+      <div>
+        <h1 class="text-black font-inter text-2xl font-bold leading-none">
+          General Interview
+        </h1>
+      </div>
+      <a href="https://mybdjobs.bdjobs.com/mybdjobs/invite-interview-home.asp?i=0" target="_blank"
+        class="flex items-center text-[#004DB3]">
+        <p class="font-semibold text-sm">More</p>
+        <img class="px-2" src="icons/arrow-right.svg" alt="" />
+      </a>
+    </div>
+    <!-- discription  -->
+    <p class="pb-10 text-justify">
+      You'll find a list of your interview invitations, including the company name, position, and invitation date. By
+      selecting "Details," you can access more information about each invitation. It's the perfect place to manage
+      opportunities and make sure you take advantage of every important interview.
+    </p>
+
+    <div class="flex sm:flex sm:justify-start justify-center sm:text-start text-center">
+      <span class="pr-3 cursor-pointer flex items-center gap-x-1" (click)="next()"><span>Next</span> <span
+          class="icon-angle-down text-sm"></span></span>
+      <span class="pr-3 cursor-pointer flex items-center gap-x-1" (click)="prev()"><span>Prev</span> <span
+          class="icon-angle-up text-sm"></span></span>
+    </div>
+  </div>
+  <!-- right side  -->
+  <div class="py-4 sm:p-0">
+    <img class="w-[262px] h-[156px] sm:min-w-[560px] sm:h-[330px] transition-all hover:drop-shadow-2xl"
+      src="images/General-Interview.jpg" alt="" />
+  </div>
+</div>

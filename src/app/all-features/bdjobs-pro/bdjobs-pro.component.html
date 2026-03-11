@@ -1,0 +1,99 @@
+<!-- <div id="bdjobs-pro" style="z-index: 1;"
+  class="flex flex-col sm:flex sm:flex-row sm:w-[1140px] sm:h-[330px] gap-x-9 items-center justify-self-center justify-between mx-auto">
+  <div class="sm:w-[564px] w-[267px]">
+    <img class="w-16 h-16 mb-5 hover:border-inherit flex justify-self-center sm:flex sm:justify-self-start"
+      src="icons-png/Bdjobs-Pro.png" alt="" />
+    <div class="flex justify-between items-center mb-3 sm:mb-4">
+      <div>
+        <h1 class="text-black font-inter text-2xl font-bold leading-none">
+          Bdjobs Pro
+        </h1>
+      </div>
+      <a href="https://mybdjobs.bdjobs.com/mybdjobs/package-info.asp" target="_blank"
+        class="flex items-center text-[#004DB3]">
+        <p class="font-semibold text-sm">More</p>
+        <img class="px-2" src="icons/arrow-right.svg" alt="" />
+      </a>
+    </div>
+    <p class="pb-10 text-justify">
+      Bdjobs Pro offers special features to help users gain an advantage in today's competitive job market. It enhances
+      the job search experience with features like unlimited applications, job-matching insights, and application
+      information about other applicants. Users can boost their applications, directly message employers, and access
+      jobs early. They can also track who views and shortlists their profiles and monitor the hiring progress of
+      specific jobs. With Bdjobs Pro, users can improve their job search and boost their chances of success.
+    </p>
+  </div>
+  <div class="py-4 sm:p-0">
+    <img class="w-[262px] h-[156px] sm:min-w-[560px] sm:h-[330px] transition-all hover:drop-shadow-2xl"
+      src="images/bdjobs_pro.jpg" alt="" />
+  </div>
+</div>
+
+<section class="min-h-[332px] flex align-items items-center justify-center my-8">
+  <div class="w-full max-w-[1160px] mx-auto relative" style="height: fit-content;">
+    <app-carousel-card-list (isHover)="trackHover($event)"></app-carousel-card-list>
+
+  </div>
+
+</section>
+
+<div
+  class="sm:w-[1140px] w-[267px] flex mx-auto sm:flex sm:justify-start justify-center relative bottom-7 {{!isHover() ? 'index' : 'z-1'}}">
+  <span class="pr-3 cursor-pointer flex items-center gap-x-1" (click)="next()"><span>Next</span> <span
+      class="icon-angle-down text-sm"></span></span>
+</div> -->
+
+<div id="bdjobs-pro"
+  class="relative z-[1] flex flex-col lg:flex-row w-full max-w-[1140px] mx-auto gap-8 items-center justify-between px-4 lg:px-0 lg:h-[330px]">
+
+  <div class="w-full lg:max-w-[564px] flex flex-col items-center lg:items-start">
+    <img class="w-16 h-16 mb-5 transition-transform hover:scale-105" src="icons-png/Bdjobs-Pro.png" alt="Bdjobs Pro" />
+
+    <div class="flex justify-between items-center w-full mb-4">
+      <h1 class="text-black font-inter text-2xl font-bold leading-none">
+        Bdjobs Pro
+      </h1>
+      <a href="https://mybdjobs.bdjobs.com/mybdjobs/package-info.asp" target="_blank"
+        class="flex items-center text-[#004DB3] hover:underline">
+        <p class="font-semibold text-sm">More</p>
+        <img class="px-2" src="icons/arrow-right.svg" alt="" />
+      </a>
+    </div>
+
+    <p class="text-justify text-gray-700 leading-relaxed text-sm md:text-base">
+      Bdjobs Pro offers special features to help users gain an advantage in today's competitive job market. It enhances
+      the job search experience with features like unlimited applications, job-matching insights, and application
+      information about other applicants. Users can boost their applications, directly message employers, and access
+      jobs early.
+    </p>
+  </div>
+
+  <div class="w-full lg:w-auto flex justify-center py-4 lg:py-0">
+    <img
+      class="w-full max-w-[400px] lg:max-w-[560px] h-auto object-cover rounded-lg transition-all hover:drop-shadow-2xl"
+      src="images/bdjobs_pro.jpg" alt="Bdjobs Pro Banner" />
+  </div>
+</div>
+
+<!-- <section class="min-h-[332px] flex items-center justify-center my-8 overflow-hidden">
+  <div class="w-full max-w-[1160px] mx-auto relative px-4 lg:px-0">
+    <app-carousel-card-list (isHover)="trackHover($event)"></app-carousel-card-list>
+  </div>
+</section> -->
+
+<section class="min-h-[332px] flex align-items items-center justify-center my-8 px-4">
+  <div class="w-full max-w-[1160px] mx-auto relative" style="height: fit-content;">
+    <app-carousel-card-list (isHover)="trackHover($event)"></app-carousel-card-list>
+
+  </div>
+
+</section>
+
+<div
+  class="w-full max-w-[1140px] mx-auto flex justify-center lg:justify-start relative bottom-7 px-4 lg:px-0 {{!isHover() ? 'index' : 'z-1'}}">
+  <span class="cursor-pointer flex items-center gap-x-1 group text-gray-600 hover:text-blue-600 font-medium"
+    (click)="next()">
+    <span>Next</span>
+    <span class="icon-angle-down text-sm transition-transform group-hover:translate-x-1"></span>
+  </span>
+</div>

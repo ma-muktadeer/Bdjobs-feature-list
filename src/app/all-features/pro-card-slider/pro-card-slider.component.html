@@ -1,0 +1,42 @@
+<div class="bdj-pro-sub-features-parent">
+  <div class="bdj-pro-sub-features">
+    <!-- Loop through the card data and display cards -->
+    @for (card of proCards; track card; let i = $index) {
+      <div
+        class="bdj-pro-card"
+        [class.visible]="i === currentIndex"
+        >
+        <div class="bdj-pro-sub-img">
+          <img [src]="card.image" alt="Card Image" />
+        </div>
+        <div>
+          <div class="flex">
+            <img [src]="card.icon" alt="Card Icon" class="bdj-pro-sub-icon" />
+            <h1 class="bdj-pro-sub-title">{{ card.title }}</h1>
+          </div>
+          <div class="">
+            <p class="bdj-pro-sub-description">
+              {{ card.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button
+    class="prev_arrow"
+    (click)="navigate('prev')"
+    [disabled]="currentIndex === 0"
+    >
+    &#10094;
+  </button>
+  <button
+    class="next_arrow"
+    (click)="navigate('next')"
+    [disabled]="currentIndex === proCards.length - 1"
+    >
+    &#10095;
+  </button>
+</div>

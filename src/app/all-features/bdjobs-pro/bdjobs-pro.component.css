@@ -1,0 +1,23 @@
+.group {
+  transform-origin: center center;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+
+/* Ensures transform-origin works consistently */
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+/* Fixes transform origin for all slides */
+.owl-carousel .owl-item {
+  transform-origin: center center;
+  backface-visibility: hidden;
+}
+
+.index {
+  z-index: 99999999999999999999;
+}

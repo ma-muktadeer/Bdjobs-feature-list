@@ -1,0 +1,47 @@
+<div class="relative mx-auto">
+  <img src="icons/arrowLeft.svg" alt="Left Arrow" class="absolute top-1/2 left-[200px] z-10" (click)="leftBtn()" />
+
+  <!-- <div class="absolute top-1/2 left-0">xxx</div> -->
+  <div
+    class="min-h-[436px] flex items-center sm:w-[1140px] sm:h-[330px] justify-self-center overflow-hidden mx-auto transition-transform"
+    [style.transform]="'translateX(' + offset + 'px)'" [style.width.px]="items.length * itemWidth">
+    <!--  item 1 -->
+    @for(item of loopedItems; track $index){
+    <div class="mx-4 ">
+      <section
+        class="group transform origin-center hover:scale-[1.05] transition-transform duration-300 ease-linear rounded-lg">
+        <!-- img container      -->
+        <div
+          class="rounded-t-lg transform transition-transform duration-600 ease-in-out max-w-[342px] group-hover:max-w-[372px] min-h-[140px] group-hover:max-h-[200px] overflow-clip">
+          <img src="images/bdj-sub-Application-insight.png"
+            class="w-full h-full object-contain transition-all duration-500 ease-in-out" alt="" />
+        </div>
+
+        <!-- details container  -->
+        <div class="border-2 border-t-0 transition-all duration-300 ease-linear">
+          <div class="flex max-h-[24px] items-center pt-2 ml-2 mb-2">
+            <img src="icons/bdj-sub-icon-Application-Insight.png" class="w-6 h-6 mr-2 text-base" alt="" />
+            <div class="min-h-[24px] my-[12px] group-hover:my-[12px] font-bold">
+              {{item.title}}
+            </div>
+          </div>
+          <div class="">
+            <p
+              class="bb w-[300px] h-[150px] group-hover:w-[340px] group-hover:h-[174px] overflow-hidden transition-all duration-500 ease-in-out p-2 pt-0 text-[#595959] font-normal hover:text [display:-webkit-box] [text-overflow:ellipsis] [-webkit-box-orient:vertical] [-webkit-line-clamp:6] group-hover:[-webkit-line-clamp:unset]">
+              Direct Message to employer is a feature that allows Bdjobs Pro
+              users to directly reach out to potential employers through private
+              messages. It helps job seekers introduce themselves, showcase
+              qualifications, and make personal connections to improve their
+              chances of being noticed and shortlisted.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    }
+
+  </div>
+
+  <img src="icons/arrowRight.svg" alt="Right Arrow" class="absolute top-1/2  right-[180px] z-10 "
+    (click)="rightBtn()" />
+</div>

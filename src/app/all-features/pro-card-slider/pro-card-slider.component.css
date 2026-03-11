@@ -1,0 +1,43 @@
+.bdj-pro-card {
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.bdj-pro-card.visible {
+  display: block;
+}
+
+.bdj-pro-sub-features-parent {
+  position: relative;
+}
+
+.prev_arrow,
+.next_arrow {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.prev_arrow {
+  left: 10px;
+}
+
+.next_arrow {
+  right: 10px;
+}
+
+.prev_arrow:disabled,
+.next_arrow:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}

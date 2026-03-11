@@ -1,0 +1,121 @@
+/* * {
+  border: 2px solid cyan;
+} */
+
+/* ------------------------------------------- */
+
+.bdj-pro-sub-title {
+  color: #212121;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#bdj-pro-sub-description {
+  width: 252px;
+  height: 84px;
+  padding: 0;
+  overflow: hidden;
+  color: #595959;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------------ */
+
+.bdj-pro-card:hover .bdj-pro-sub-img img {
+  width: 416px;
+  height: 249px;
+}
+.bdj-pro-card:hover .bdj-pro-sub-title {
+  color: #212121;
+  font-size: 22px;
+  font-weight: 700;
+  /* width: 383px; */
+}
+.bdj-pro-card:hover .bdj-pro-sub-icon {
+  width: 28px;
+  height: 27.999px;
+}
+.bdj-pro-card:hover #bdj-pro-sub-description {
+  width: 416px;
+  height: 144px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  align-items: stretch;
+  /* padding: 10px; */
+  align-items: flex-start;
+  text-wrap: balance;
+}
+
+/* ----------------------------------------------------------------- */
+.bdj-pro-sub-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+
+.bdj-pro-sub-icon:hover {
+  display: flex;
+  min-width: 28px;
+  min-height: 27.999px;
+}
+
+.bdj-pro-sub-features-parent {
+  gap: 50px;
+}
+
+.bdj-pro-sub-features {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 322px;
+  position: relative;
+  z-index: 1;
+
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+  /*
+  overflow-x: clip;
+  overflow-clip-margin: 100px; */
+}
+
+.bdj-pro-sub-features::-webkit-scrollbar {
+  width: 0;
+}
+.bdj-pro-sub-features:has(.bdj-pro-card:hover) {
+  /* background-color: lightblue; */
+  max-width: 1231px;
+  overflow-x: clip;
+  overflow-clip-margin: 100px;
+}
+
+.bdj-pro-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.bdj-pro-card:hover {
+  min-width: 416px;
+  min-height: 461px;
+  transform: scaleY(1.2);
+  transform-origin: bottom;
+  flex-grow: 2;
+  border-radius: 8px;
+  border: 1px solid #c6c6c6;
+  background: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+  z-index: 120;
+  text-wrap: wrap;
+  gap: 10px;
+}
+

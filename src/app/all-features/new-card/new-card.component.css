@@ -1,0 +1,20 @@
+
+
+
+/* .bb{
+   background-color: chartreuse;
+   white-space: wrap;
+   overflow:  hidden;
+   text-overflow: ellipsis;
+   
+   
+} */
+
+.truncate1{
+   display: -webkit-box;
+   -webkit-line-clamp: 6;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+
